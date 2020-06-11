@@ -350,6 +350,7 @@ MigrationBackup/
 .ionide/
 
 #webpack
+/dist
 /node_modules
 /test/js
 /test/browsertest/js
