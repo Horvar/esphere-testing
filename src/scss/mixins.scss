@@ -1,0 +1,41 @@
+@mixin container() {
+    width: 1420px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+@mixin dot() {
+    content: '';
+    z-index: 1;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    background-color: $clrGreen;
+    border: 2px solid $clrGreen;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+@mixin titleH1() {
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: #555;
+}
+
+@mixin titleH2() {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 30px 0;
+    color: #555;
+}
+
+@mixin titleH3() {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 16px 0;
+}

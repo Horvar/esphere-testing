@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КОРУС - тест</title>
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="./css/style.css" rel="stylesheet"></head>
+<body>
+
+  <header></header>
+
+  <main class="main">
+    <div class="main__container">
+
+      <section class="main__timeline timeline">
+        <div class="timeline__container">
+          <h1 class="timeline__title">Таймлайн</h1>
+          <ul class="timeline__legend">
+            <li class="gray">- шаг не пройден</li>
+            <li class="orange">- шаг в процессе*</li>
+            <li class="green">- шаг выполнен</li>
+          </ul>
+  
+          <ul class="timeline__step-list">
+            <!-- 1 -->
+            <li class="timeline__step-item">
+              <div class="timeline__step-label"><p></p></div>
+            </li>
+            <!-- 2 -->
+            <li class="timeline__step-item">
+              <div class="timeline__step-label"><p></p></div>
+            </li>
+            <!-- 3 -->
+            <li class="timeline__step-item current">
+              <div class="timeline__step-label"><p></p></div>
+            </li>
+            <!-- 4 -->
+            <li class="timeline__step-item">
+              <div class="timeline__step-label"><p></p></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main__settings settings">
+        <div class="settings__container">
+          <h2 class="settings__title">Настройки</h2>
+
+
+          <div class="settings__wrapper">
+            <div class="settings__setting" id="setVert">
+              <h3 class="settings__subtitle">Положение лейбла</h3>
+                <label class="settings__label">
+                  <input type="radio" name="vert" value="top" checked>
+                  <span>Верх</span>
+                </label>
+                <label class="settings__label">
+                  <input type="radio" name="vert" value="bot">
+                  <span>Низ</span>
+                </label>
+            </div>
+  
+            <div class="settings__setting" id="setHor">
+              <h3 class="settings__subtitle">Вид таймлайна</h3>
+              <label class="settings__label">
+                <input type="radio" name="hor" value="space" checked>
+                <span>Интервалы</span>
+              </label>
+              <label class="settings__label">
+                <input type="radio" name="hor" value="spot">
+                <span>Точки</span>
+              </label>
+            </div>
+  
+            <div class="settings__setting" id="setAdd">
+              <h3 class="settings__subtitle">Количество чек-поинтов</h3>
+                <button class="settings__button" id="add">Добавить</button>
+                <button class="settings__button" id="del">Удалить</button>
+            </div>
+          </div>
+          
+          <p class="timeline__text">* Чтобы выбрать интервал, находящийся в процессе, кликните по его лейблу.</p>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer></footer>
+  
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
