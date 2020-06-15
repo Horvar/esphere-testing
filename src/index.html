@@ -8,8 +8,6 @@
 </head>
 <body>
 
-  <header></header>
-
   <main class="main">
     <div class="main__container">
 
@@ -23,21 +21,17 @@
           </ul>
   
           <ul class="timeline__step-list">
-            <!-- 1 -->
             <li class="timeline__step-item">
-              <div class="timeline__step-label"><p></p></div>
+              <div class="timeline__step-label"><p>Step</p></div>
             </li>
-            <!-- 2 -->
             <li class="timeline__step-item">
-              <div class="timeline__step-label"><p></p></div>
+              <div class="timeline__step-label"><p>Step</p></div>
             </li>
-            <!-- 3 -->
             <li class="timeline__step-item current">
-              <div class="timeline__step-label"><p></p></div>
+              <div class="timeline__step-label"><p>Step</p></div>
             </li>
-            <!-- 4 -->
             <li class="timeline__step-item">
-              <div class="timeline__step-label"><p></p></div>
+              <div class="timeline__step-label"><p>Step</p></div>
             </li>
           </ul>
         </div>
@@ -48,7 +42,31 @@
           <h2 class="settings__title">Настройки</h2>
 
 
-          <div class="settings__wrapper">
+          <div class="settings__wrapper">  
+            <div class="settings__setting" id="setHor">
+              <h3 class="settings__subtitle">Тип таймлайна</h3>
+              <label class="settings__label">
+                <input type="radio" name="hor" value="space" checked>
+                <span>Интервалы</span>
+              </label>
+              <label class="settings__label">
+                <input type="radio" name="hor" value="spot">
+                <span>Точки</span>
+              </label>
+            </div>
+
+            <div class="settings__setting" id="setCntr">
+              <h3 class="settings__subtitle">Тип лейбла</h3>
+              <label class="settings__label">
+                <input type="radio" name="cntr" value="cntrTrue" checked>
+                <span>Счетчик</span>
+              </label>
+              <label class="settings__label">
+                <input type="radio" name="cntr" value="cntrFalse">
+                <span>Текст</span>
+              </label>
+            </div>
+
             <div class="settings__setting" id="setVert">
               <h3 class="settings__subtitle">Положение лейбла</h3>
                 <label class="settings__label">
@@ -59,18 +77,6 @@
                   <input type="radio" name="vert" value="bot">
                   <span>Низ</span>
                 </label>
-            </div>
-  
-            <div class="settings__setting" id="setHor">
-              <h3 class="settings__subtitle">Вид таймлайна</h3>
-              <label class="settings__label">
-                <input type="radio" name="hor" value="space" checked>
-                <span>Интервалы</span>
-              </label>
-              <label class="settings__label">
-                <input type="radio" name="hor" value="spot">
-                <span>Точки</span>
-              </label>
             </div>
   
             <div class="settings__setting" id="setAdd">
@@ -88,7 +94,5 @@
     </div>
   </main>
 
-  <footer></footer>
-  
 </body>
 </html>

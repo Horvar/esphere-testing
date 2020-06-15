@@ -48,3 +48,8 @@ $(document).on('click', '.timeline__step-label p', function() {
     $('.timeline__step-item').removeClass('current');
     $(this).parents('.timeline__step-item').toggleClass('current');
 });
+
+//label horizontal
+$('#setCntr input[type=radio]').change(function() {
+    $('.timeline').toggleClass('no-counter');
+});
